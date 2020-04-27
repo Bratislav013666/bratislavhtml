@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+    <title>Itachi sharingan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <div id="slika">
+        <img src="sharingan.jpg">
+       <img id="senka" class="oko" style="width: 140px;" src="oko.png">
+        <img id="oko"  style="width: 140px;" src="oko.png">
+        <button onclick="obrni()"id="aktiviraj">Activate Itachi's sharingan</button>
+    </div>
+    </div>  
+	<script>
+        function obrni(){
+            
+            var oko=document.getElementById("oko");
+            oko.className=("obrni")
+            var senka=document.getElementById("senka")
+            senka.classList.add("senka")
+            var sound=document.createElement("audio");
+            sound.src="sharingan.mp3"
+            var wrapper=document.getElementById("wrapper");
+            wrapper.append(sound)
+            function playAudio(){
+                sound.play()
+            }
+            playAudio()
+        }
+
+        
+	</script>
+</body>
+</html>

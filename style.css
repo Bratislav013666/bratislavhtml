@@ -1,0 +1,60 @@
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slika{
+    width: 533px;
+    position: relative;
+}
+button{
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 250px
+}
+button:hover{
+    background-color: rgb(187, 99, 99);
+    color: white;
+}
+#oko{
+    position: absolute;
+    top: 100px;
+    left: 191px;
+    
+    
+}
+.oko{
+    position: absolute;
+    top: 100px;
+    left: 191px;
+    opacity: 0.3;
+    
+}
+
+.obrni{
+    animation: spin 2s forwards ;
+    animation-timing-function: cubic-bezier(1,.11,.7,.92)
+}
+.senka{
+    animation: senka 3.5s forwards;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(1440deg);
+    }
+}
+@keyframes senka{
+    from{
+        transform:scale(0,0) ;
+    }
+    to{
+       transform: scale(10,10);
+    }
+}
